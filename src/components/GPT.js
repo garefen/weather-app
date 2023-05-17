@@ -38,7 +38,7 @@ export default function GPT({city, temp}) {
           {textGenerated}
           <div className={styles.tweet}>
             <TwitterShareButton
-              url={'https://weather-app-gamma-eosin.vercel.app/'}
+              url={'https://weather-app-garefen.vercel.app/'}
               options={{ text: `${textGenerated} - Criado com ClimaTweetIA: `, via: 'sartiidev' }}
             />
           </div>
