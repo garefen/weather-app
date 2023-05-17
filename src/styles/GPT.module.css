@@ -1,0 +1,65 @@
+.gpt {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.generatePrompt {
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+.generatePrompt:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.generatePrompt:disabled {
+  background: grey;
+  border: none;
+  cursor: default;
+  color: white;
+}
+
+.textGenerated {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.tweet {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .gpt {
+    margin-top: 40px;
+  }
+
+  .generatePrompt {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .textGenerated {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .tweet {
+    margin-top: 20px;
+  }
+}

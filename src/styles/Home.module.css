@@ -1,0 +1,60 @@
+.main {
+  min-height: 100%;
+}
+
+.backgroundImage {
+  box-sizing: border-box;
+  background-image: url('/background-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.inputWrapper {
+  margin-top: 20px;
+  color: black;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 2px solid black;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 80px;
+}
+
+.input {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: black;
+  width: 250px;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit {
+  background: none;
+  border: none;
+  color: black;
+}
