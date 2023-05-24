@@ -11,7 +11,13 @@ export const postCompletions = async (city, temp) => {
 
   const response = await openai.createChatCompletion({
     "model": "gpt-3.5-turbo",
-    "messages": [{"role": "user", "content": `Crie uma frase legal em pt-BR para postar no twitter sobre a atual temperatura em ${city}: ${temp}`}],
+    "messages": [
+      {"role": "system", "content": `
+          Você é um criador de frases divertidas que recebe o nome de uma cidade e a temperatura atual em celsius e responde sempre com
+          algo divertido e/ou engraçado em Português Brasileiro no formato de uma postagem no twitter, mas sem nenhuma hashtag.
+      `},
+      {"role": "user", "content": `cidade: ${city}, temperatura: ${temp}`},
+    ],
     "temperature": 1,
   });
 
