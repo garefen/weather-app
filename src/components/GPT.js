@@ -38,7 +38,6 @@ export default function GPT({city, temp}) {
           {textGenerated}
           <div className={styles.tweet}>
             <TwitterShareButton
-              url={'https://clima-gpt.vercel.app/'}
               options={{ text: `${textGenerated}`, via: 'ClimaGPT', size: 'large' }}
             />
           </div>
