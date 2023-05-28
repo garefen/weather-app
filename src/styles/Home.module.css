@@ -18,8 +18,7 @@
 }
 
 .inputWrapper {
-  margin-top: 20px;
-  color: black;
+  color: white;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -27,7 +26,7 @@
 }
 
 .form {
-  border: 2px solid black;
+  border: 2px solid white;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -41,12 +40,12 @@
   background: none;
   border: none;
   font-size: 18px;
-  color: black;
+  color: white;
   width: 250px;
 }
 
 .input::placeholder {
-  color: black;
+  color: white;
 }
 
 .input:focus {
@@ -56,5 +55,46 @@
 .submit {
   background: none;
   border: none;
-  color: black;
+  color: white;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 70px auto 0;
+  max-width: 1000px;
+  background-color: black;
+  opacity: .8;
+  color: white;
+  border-radius: 4px;
+  padding: 32px 32px 60px;
+}
+
+.wrapperWithCity {
+  margin: 10px auto 0;
+  max-width: 500px;
+  opacity: .8;
+  color: white;
+  border-radius: 4px;
+  padding: 32px; 
+}
+
+.title {
+  font-size: 64px;
+}
+
+.copy {
+  margin-bottom: 60px;
+}
+
+.copyHasCity {
+  font-size: 40px;
+  margin-top: 0;
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+@media (max-width: 1015px) {
+  .wrapper {
+    margin: 70px 10px 0;
+  }
 }

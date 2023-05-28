@@ -9,7 +9,8 @@
 .generatePrompt {
   padding: 15px 25px;
   font-size: 20px;
-  border: none;
+  border: 3px solid black;
+  border-radius: 8px;
   font-weight: bold;
   background-color: white;
   color: black;

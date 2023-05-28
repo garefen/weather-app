@@ -39,7 +39,7 @@ export default function GPT({city, temp}) {
           <div className={styles.tweet}>
             <TwitterShareButton
               url={'https://clima-tweet-ai.vercel.app/'}
-              options={{ text: `${textGenerated} - Criado com ClimaTweetIA: `, via: 'sartiidev' }}
+              options={{ text: `${textGenerated}`, via: 'ClimaGPT', size: 'large' }}
             />
           </div>
         </div>

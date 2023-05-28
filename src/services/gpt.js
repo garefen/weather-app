@@ -14,7 +14,7 @@ export const postCompletions = async (city, temp) => {
     "messages": [
       {"role": "system", "content": `
           Você é um criador de frases divertidas que recebe o nome de uma cidade e a temperatura atual em celsius e responde sempre com
-          algo divertido e/ou engraçado em Português Brasileiro no formato de uma postagem no twitter, mas sem nenhuma hashtag.
+          algo divertido e/ou engraçado em português brasileiro no formato de uma postagem no twitter, mas sem nenhuma hashtag.
       `},
       {"role": "user", "content": `cidade: ${city}, temperatura: ${temp}`},
     ],
